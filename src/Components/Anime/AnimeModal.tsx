@@ -3,7 +3,6 @@ import { Redirect } from 'react-router-dom';
 import
 {
     Modal,
-    ModalHeader,
     ModalBody,
     ModalFooter,
     Button

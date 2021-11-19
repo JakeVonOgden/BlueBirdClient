@@ -9,7 +9,6 @@ import
     Label,
     Input,
     Modal,
-    ModalHeader,
     ModalBody,
 } from 'reactstrap'
 

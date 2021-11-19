@@ -1,5 +1,4 @@
 import * as React from 'react';
-import {Table, Button} from 'reactstrap';
 import '../../../StyleSheets/AccountStyles/Profile.css';
 
 interface AccountTableProps 
