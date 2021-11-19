@@ -1,0 +1,88 @@
+
+
+
+
+
+
+
+#X-btn 
+{
+    color: crimson;
+    font-family: nunito;
+    font-weight: 900;
+    font-size: 38px;
+    border: black;
+    background-color: rgb(10,10,10);
+    margin-left: 0%;
+    transition: 0.3s;
+}
+
+#X-btn:hover
+{
+    filter: brightness(0.7);
+}
+
+#save-btn 
+{
+    color: black;
+    background: #addfad;
+    font-family: nunito, serif;
+    font-weight: 900;
+    font-size: 25px;
+    border-radius: 10px;
+    border: 5px solid black;
+    margin-left: 30%;
+    transition: 0.3s;
+}
+
+#save-btn:hover 
+{
+    filter: brightness(0.7);
+}
+
+
+
+
+
+
+#bounceTopBtn 
+{
+    display: inline-block;
+    background-color: dodgerblue;
+    width: 75px;
+    height: 60px;
+    text-align: center;
+    border-radius: 20px;
+    border: solid 4px black;
+    position: fixed;
+    bottom: 5%;
+    right: 4%;
+    transition: background-color .3s, opacity .7s, visibility .7s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+#bounceTopBtn::after 
+{
+    content: "\f077";
+    font-size: 30px;
+    line-height: 29px;
+    font-family: FontAwesome;
+    font-weight: 800;
+}
+
+#bounceTopBtn:hover 
+{
+    cursor: pointer;
+    filter: brightness(1.2);
+    background-color: black;
+    color: dodgerblue;
+    border: solid 4px dodgerblue;
+}
+
+#bounceTopBtn.show 
+{
+    opacity: 1;
+    visibility: visible;
+}

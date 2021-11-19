@@ -1,0 +1,80 @@
+
+
+p {
+    padding: 0;
+    margin: 0;
+}
+.card {
+    background-color: #fff;
+    border-radius: 1rem;
+    width: 370px;
+    box-shadow: 3px 4px 5px rgba(200,200,200,0.5);
+
+}
+.card__image {
+    padding: 2rem;
+    padding-bottom: 0;
+ 
+    height: 340px;
+    width: 300px;
+}
+.card__image img {
+    position: absolute;
+    border-radius: 1rem;
+    width: inherit;
+    margin-top: 20px;
+    transform: translateY(-4.5rem);
+    object-fit: cover;
+    box-shadow: -7px 6px 13px -1px rgba(0, 0, 0, 0.55);
+    transition: all 0.5s ease;
+}
+.card__image img:hover {
+    transform: translateY(-4.5rem) scale(1.05);
+}
+.card p {
+    padding: 1rem;
+    padding-bottom: 0;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: nunito;
+    font-weight: 300;
+    margin-top: -10px;
+}
+.card__name p {
+    color: #3c363a;
+    font-weight: bold;
+    font-size: 2.2rem;
+    text-align: center;
+}
+.card__button {
+    border-radius: 1rem;
+    background: crimson;
+    font-weight: bold;
+    margin: 2rem;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    box-shadow: -7px 6px 13px -1px rgba(40, 40, 40, 0.55);
+    transition: all 0.3s ease;
+}
+.card__button p {
+    font-size: 1.8rem;
+    padding: 0;
+    margin-top: 0px;
+    font-weight: 800;
+}
+.card__button:hover {
+    transform: scale(1.05);
+    background-color: black;
+    color: crimson;
+}
+.email-label
+{
+    font-weight: 700;
+    margin-left: 15px;
+    color: black;
+}
+.password-label
+{
+    font-weight: 700;
+}

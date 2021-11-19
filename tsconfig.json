@@ -1,6 +1,10 @@
 {
   "compilerOptions": {
     "target": "es5",
+    "typeRoots": [
+      "./typings",
+      "./node_modules/@types"
+    ],
     "lib": [
       "dom",
       "dom.iterable",
@@ -22,5 +26,9 @@
   },
   "include": [
     "src"
+  ],
+  "exclude": [
+    "./node_modules",
+    "./typings"
   ]
 }

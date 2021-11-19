@@ -1,0 +1,103 @@
+.anime-header {
+  padding-top: 5%;
+  margin-left: 1%;
+}
+
+.anime-header h1 {
+  font-size: 25px;
+  color: rgb(160, 160, 160);
+  text-align: left;
+  font-family: Reggae One;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.database-style {
+  font-weight: 600;
+  color: crimson;
+}
+
+.anime-list {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-items: center;
+}
+
+.anime-list h3 {
+  color: rgb(255, 255, 255);
+  font-family: nunito, serif;
+  font-weight: 200;
+  font-size: 16px;
+}
+
+.anime-card {
+  max-width: 170px;
+}
+
+.anime-card a {
+  text-decoration: none;
+}
+
+figure img {
+  width: 100%;
+  height: 245px;
+  object-fit: cover;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.15);
+  transition: 0.4s;
+}
+
+figure img:hover {
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 1);
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.modal-lg {
+  border: none;
+  margin-top: 7%;
+}
+
+.modal-body {
+  display: flex;
+  color: white;
+  font-size: 25px;
+  font-family: nunito;
+  font-weight: 500;
+  padding: 20px;
+}
+
+.modal-synopsis
+{
+  padding: 25px;
+}
+
+.modal-body img {
+ 
+  width: 190px;
+  height: 300px;
+}
+
+.modal-footer {
+  font-size: 20px;
+  font-family: nunito;
+  font-weight: 700;
+  background-color: rgb(0, 0, 0);
+  border: none;
+  color: goldenrod;
+  justify-content: center;
+}
+
+.more-info{
+    display: flex;
+    justify-content: flex-start;
+    padding: 0px 20px;
+}
+.more-info a {
+  color: #addfad;
+  font-weight: 700;
+  font-family: nunito;
+  font-size: 20px;
+  text-decoration: none;
+}
+.more-info a:hover {
+  color: rgb(160, 160, 160);
+}

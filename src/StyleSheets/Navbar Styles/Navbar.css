@@ -1,0 +1,141 @@
+.navbar-container
+{
+    height: 3.75em;
+    min-width: 20rem;
+    justify-content: space-between;
+    background: rgb(10,10,10);
+    padding-left: 13%;
+    padding-right: 13%;
+}
+
+.brand
+{
+    font-family: nunito;
+    font-size: 20px;
+    font-weight: 900;
+    
+    color: crimson;
+    text-shadow: 3px 4px 5px rgba(80,80,80,0.8);
+    padding: 8px;
+}
+
+.white-items > a
+{
+    font-family: nunito, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: rgba(255,255,255,1);
+    margin-top: 3px;
+}
+
+.search
+{
+    position: relative;
+    height: 50px;
+}
+
+.search .search-input
+{
+    background-color: rgba(55,55,55,1);
+    color: rgba(200,200,200,0.8);
+    border: 1px solid rgba(220,20,60,0.3);
+    font-size: 18px;
+    padding: 15px;
+    height: 40px;
+    width: 50px;
+    transition: width 0.75s ease;
+    margin-left: 100px;
+    margin-top: 3px;
+}
+
+.search-btn
+{
+    background-color: rgb(10,10,10);
+    border: 0;
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 40px;
+    width: 50px;
+    transition: transform 0.8s ease;
+    margin-left: 100px;
+    margin-top: 3px;
+}
+
+.search-btn:focus,
+.search-input:focus
+{
+    outline: none;
+}
+
+.search.active .search-input
+{
+    width: 680px;
+}
+
+.search.active .search-btn
+{
+    transform: translateX(682px);
+}
+
+.fas 
+{
+    color: rgba(100,100,100,1);
+}
+
+.green-items > a
+{
+    font-family: nunito, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #addfad;
+}
+
+.login-logout
+{
+    font-family: Nunito, serif;
+    font-size: 20px;
+    font-weight: 900;
+    color: crimson;
+    text-shadow: 3px 4px 5px rgba(80,80,80,0.8);
+    padding: 8px;
+    margin-left: 81%;
+}
+
+li.white-items
+{
+   padding-left: 30px; 
+}
+
+li.green-items
+{
+    padding-right: 30px;
+}
+
+.brand:hover
+{
+    color: rgb(215,215,215);
+}
+
+.login-logout:hover
+{
+    color: rgb(215,215,215);
+}
+
+.white-items a:hover
+{
+    color: crimson;
+}
+
+.green-items a:hover
+{
+    color: crimson;
+}
+
+.fas:hover
+{
+   
+    color: crimson;
+}

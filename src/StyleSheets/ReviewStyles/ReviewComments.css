@@ -1,0 +1,98 @@
+.review-owner
+{
+    font-size: 20px;
+    color: white;
+    margin-bottom: 5px;
+    margin-left: 0;
+    margin-right: 0;
+    font-family: nunito;
+}
+
+.scroll-box
+{
+    max-height: 237px;
+    max-width: 1041px;
+    width: auto;
+    overflow:scroll;
+    overflow-x: hidden;
+
+}
+
+.divToScroll
+{
+    border-top: hidden;
+    border-bottom: 2px solid rgba(0,0,0,0.3);
+    border-left: hidden;
+    border-right: hidden;
+    padding: 10px 0px;
+}
+
+.comment-owner
+{
+    color: rgb(192, 0, 0);
+    font-weight: 600;
+    font-size: 24px;
+    padding: 5px;
+    margin-left: 4%;
+    font-family: nunito;   
+    letter-spacing: 1px;
+}
+
+.date
+{
+    color: gray;
+    font-family: nunito;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 14px;
+    margin-left: 1%;
+}
+
+.comment-content
+{
+    padding-bottom: 20px;
+    font-size: 18px;
+    margin-left: 4%;
+    font-weight: 200;
+    font-family: mulish;
+    letter-spacing: 1px;
+}
+
+.edit-button
+{
+    font-size: 10px;
+    border-radius: 0px;
+    background-color: rgba(23,27,31);
+    color: #ADDFAD;
+    border:1px dotted black;
+    box-shadow: 1px 1px 1px rgba(0,0,0,1);
+    margin-left: 1%;
+  
+}
+
+.delete-button
+{
+    font-size: 10px;
+    border-radius: 0px;
+    
+    color: crimson;
+    background-color: rgba(23,27,31);
+    border: 1px dotted black;
+    box-shadow: 1px 1px 1px rgba(0,0,0,1);
+    margin-left: 1%;
+ 
+}
+
+.delete-button:hover
+{
+    background-color: black;
+    color: red;
+    border-color: rgba(23,27,31)
+}
+
+.edit-button:hover
+{
+    background-color: black;
+    color: limegreen;
+    border-color: rgba(23,27,31)
+}

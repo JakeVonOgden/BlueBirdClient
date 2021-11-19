@@ -1,13 +1,174 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* 
+{
+	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body 
+{
+	margin: 0;
+	overflow-x: hidden;
+	background-color: rgb(23,27,31);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.AppContainer 
+{
+	padding: 0;
+}
+
+.App 
+{
+	height: 100vh;
+	width: 100%;
+	background-color: rgb(23,27,31);
+}
+
+
+.text-box 
+{
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.landing-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.landing-button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.landing-button:hover span {
+  padding-right: 25px;
+}
+
+.landing-button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.navHover {
+  z-index: 3;
+  transition: 0.3s;
+}
+
+.navHover:hover {
+  z-index: 3;
+  color: crimson;
+}
+
+.brandHover {
+  transition: 0.3s;
+}
+
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(75, 75, 75); 
+  border-radius: 15px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: crimson; 
+  border-radius: 15px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: crimson; 
+}
+
+.masterListBtn {
+  width: 475px;
+  height: 175px;
+  border: 2px solid black;
+  background-color: rgba(33,37,41);
+  color: black;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  font-size: 55px;
+  font-family: mulish, serif;
+  font-weight: 700;
+  transition: all .25s ease-in-out;
+  text-decoration: none;
+  list-style: none;
+  z-index: 0;
+}
+.masterListBtn:before {
+      width: 100%;
+			height: 100%;
+			content: '';
+			margin: auto;
+			position: absolute;
+			top:  -100%;
+			left: -100%;
+			background: rgba(15,15,15);
+      border: 2px solid crimson;
+			transition: all .25s;
+			z-index: -1;
+}
+
+
+.masterListBtn:hover{
+  color: crimson;
+}
+.masterListBtn:hover:before{
+  top: 0;
+  left: 0;
+}
+.masterListBtn:hover:after{
+  transform: rotateY(90deg);
+}
+
+.deleteBtn {
+  font-size: 25px;
+  font-weight: 900;
+  font-family: mulish, sans-serif;
+  border-radius: 5px;
+  background-color: rgba(255,50,75,0.6);
+  border: 0px solid black;
+}
+
+.deleteBtn:hover {
+  filter: brightness(1.3); 
+}
+.editBtn {
+  font-size: 25px;
+  font-weight: 900;
+  font-family: mulish, sans-serif;
+  color: black;
+  border-radius: 25px;
+  background-color: rgba(255,50,75,0.6);
+  border: 0px solid black;
+}
+
+.editBtn:hover {
+  filter: brightness(1.3); 
+}
+
+.saveBtn:hover {
+  filter: brightness(1.3);
+}
+
+.xBtn:hover {
+  filter: brightness(1.3);
 }

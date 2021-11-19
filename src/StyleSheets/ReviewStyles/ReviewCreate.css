@@ -1,0 +1,95 @@
+.post-container
+{
+    margin: 8px 20px;
+    display: flex;
+    padding: 8px 20px;
+    justify-content: flex-start;
+}
+
+.post-image-container
+{
+    padding: 8px 20px;
+    display: block;
+}
+
+.post-image
+{
+    margin: 40px;
+    display: inline-block;
+    height: 420px;
+}
+
+.text-container
+{
+    padding: 8px 20px;
+    display: block;
+}
+
+.post-header1
+{
+    color: #addfad;
+    padding-top: 20px;
+    margin-bottom: 0.35em;
+    font-size: 3rem;
+    font-family: Reggae One;
+    font-weight: 600;
+    line-height: 1.167;
+    letter-spacing: 0em;
+}
+
+.mainWrap
+{
+    max-width:900px;
+    width: 100%;
+    margin:0 auto;
+    padding-bottom:100px;
+}
+.review-header
+{
+    display: flex;
+    justify-content: flex-start;
+}
+.custom-select
+{
+    width:10%;
+    border:0;
+    background:#fff;
+    font-size:1.2em;
+   
+    box-shadow:4px 4px 0px rgba(0,0,0,.1);
+    color:#111;
+}
+.rating
+{
+    color: white;
+    font-family: Reggae One;
+    font-weight: 400;
+    font-size: 25px;
+    padding-right: 38px;
+}
+
+.mainArea
+{
+    width:100%;
+    box-shadow:4px 4px 0px rgba(0,0,0,.1);
+    font-size:1.4em;
+    margin-top:20px;
+    padding:20px;
+   
+    color:#111;
+    height:400px;
+    resize:none;
+}
+
+.reviewBtn
+{
+    width:100%;
+    padding:20px;
+    text-align:center;
+    margin-top:20px;
+    font-size:2em;
+    background: #addfad;;
+    color: black;
+    font-family: Reggae One;
+    cursor:pointer;
+}

@@ -1,0 +1,27 @@
+.modal-sm
+{
+    margin-top: 7.5%;
+    margin-right: 20%;
+    border: 3px solid black;
+}
+
+.modal-body
+{
+    background: rgb(23,27,31);
+}
+
+.modal-form > label
+{
+    color: rgb(160,160,160);
+    font-family: nunito, serif;
+    font-weight: 200;
+    font-size: 25px;
+   
+}
+
+.modal-form > input {
+    width: 100%;
+    border: 3px solid black;
+    box-shadow: 1px 2px 3px rgba(0,0,0,1);
+}
+

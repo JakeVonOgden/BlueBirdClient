@@ -1,0 +1,143 @@
+
+
+.anime-review-wrapper
+{
+    display: flex;
+    margin-top: 4%;
+  
+    padding: 10px;
+}
+
+.entire-card
+{
+    height: 295px;
+    width: 180px;
+    background-color: rgba(23,27,31);
+    box-shadow: 2px 3px 4px rgba(0,0,0,1);
+    margin-top: 0%;
+    border-radius: 0px;
+}
+
+.card-image 
+{
+    padding: 0;
+    height: 200px;
+    width: 135px;
+    border: 2px solid black;
+    box-shadow: 2px 3px 4px rgba(0,0,0,1);
+    margin-top: 10%;
+}
+
+.review-text-area
+{
+    margin-left: 50px;
+    max-width: 1000px;
+    border: 2px solid black;
+    padding: 10px 20px;
+}
+
+.text-area-head
+{
+    margin-top: 20px;
+    color: white;
+    font-weight: 600;
+}
+
+.text-area-rating
+{
+    color: white;
+    font-size: 25px;
+    color: goldenrod;
+    margin-top: 0px;
+}
+
+.text-area-para
+{
+    color: white;
+    font-size: 16px;
+    font-family: nunito;
+    font-weight: 200;
+    margin-top: 10px;
+    overflow: scroll;
+    overflow-x:hidden;
+    max-height: 240px;
+    letter-spacing: 1px;
+    line-height: 22px;
+    padding: 15px 10px;
+    border: 2px solid black;
+    border-bottom: 1px solid black;
+    border-right: hidden;
+   
+    
+    
+}
+
+.editBUTTON
+{
+    font-size: 16px;
+    border-radius: 0px;
+    background-color: rgba(23,27,31);
+    color: #ADDFAD;
+    border:2px solid black;
+    box-shadow: 2px 3px 4px rgba(0,0,0,1);
+}
+
+.editBUTTON:hover
+{
+    background-color: black;
+    color: limegreen;
+    border-color: rgba(23,27,31)
+}
+
+.deleteBUTTON 
+{
+    font-size: 16px;
+    border-radius: 0px;
+    margin-right: 7px;
+    color: crimson;
+    background-color: rgba(23,27,31);
+    border: 2px solid black;
+    box-shadow: 2px 3px 4px rgba(0,0,0,1);
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+.deleteBUTTON:focus 
+{
+    font-size: 16px;
+    border-radius: 0px;
+    margin-right: 7px;
+    color: crimson;
+    background-color: rgba(23,27,31);
+    border: 2px solid black;
+    box-shadow: 2px 3px 4px rgba(0,0,0,1);
+    margin-top:10px;
+}
+.editBUTTON:focus
+{
+    font-size: 16px;
+    border-radius: 0px;
+    background-color: rgba(23,27,31);
+    color: #ADDFAD;
+    border:2px solid black;
+    box-shadow: 2px 3px 4px rgba(0,0,0,1);
+    margin-top:10px;
+}
+.deleteBUTTON:hover
+{
+    background-color: black;
+    color: red;
+    border-color: rgba(23,27,31)
+}
+
+.entire-body{
+    text-align: center;
+}
+
+.header
+{
+    color: rgb(225,225,225);
+    font-family: mulish;
+    font-weight: 600;
+    margin-top: 50px;
+    text-shadow: 4px 5px 5px rgba(0,0,0,1);
+}

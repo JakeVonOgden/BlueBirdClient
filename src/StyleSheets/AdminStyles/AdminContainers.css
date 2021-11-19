@@ -1,0 +1,15 @@
+.btn-container
+{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.table-container
+{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

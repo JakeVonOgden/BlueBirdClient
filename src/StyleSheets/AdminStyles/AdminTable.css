@@ -1,0 +1,30 @@
+.masterlist-header 
+{
+    text-align: center;
+    color: crimson;
+    font-weight: 400;
+    font-size: 65px;
+    font-family: Mulish
+}
+
+.masterlist-data > td
+{
+    text-align: center;
+    color: rgb(190,190,190);
+    font-family: nunito, serif;
+    font-weight: 200;
+    border: 2px solid rgba(160,160,160,0.2);
+    font-size: 25px;
+}
+
+.table-headers > th
+{
+    color: #addfad;
+    font-family: nunito, serif;
+    font-weight: 500;
+    font-size: 30px;
+    padding: 15px;
+    border: 2px solid rgba(160,160,160,0.2);
+    text-align: center;
+}
+

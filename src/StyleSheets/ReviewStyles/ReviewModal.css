@@ -1,0 +1,55 @@
+.modal-l
+{
+    height: 400px;
+}
+
+.modal-content 
+{
+   color: rgba(23,27,31);
+   border: 2px solid black;
+}
+
+.review-updateBtn
+{
+    background-color: rgba(33,37,41);
+    border: 2px solid black;
+    color: #addfad;
+    box-shadow: 2px 3px 4px rgba(0,0,0,1)
+}
+
+.review-updateBtn:hover
+{
+    background-color: rgba(10,10,10,1);
+    border: 2px solid black;
+}
+
+.review-rating
+{
+    width: 15%;
+    height: 30px;
+    margin-left: 52%;
+    background: rgba(33,37,41,1);
+    color: goldenrod;
+    border: 2px solid black;
+    font-size: 18px;
+}
+
+.modal-text-area
+{
+    width:100%;
+    box-shadow:4px 4px 0px rgba(0,0,0,.1);
+    color:white;
+    font-size: 14px;
+    height:400px;
+    resize:none;
+    background: rgba(35,35,35,1);
+    border: 2px solid rgba(0,0,0,1);
+    margin-top: 10px;
+}
+
+.review-rating-header
+{
+    color: goldenrod;
+    font-size: 18px;
+    margin-top: 2px;
+}
