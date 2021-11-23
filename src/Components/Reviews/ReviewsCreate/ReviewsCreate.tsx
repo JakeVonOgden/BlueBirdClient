@@ -1,6 +1,7 @@
 import * as React from 'react';
 import APIURL from '../../../helpers/environment';
 import { Redirect } from 'react-router-dom'
+import { ThemeConsumer } from 'styled-components';
 
 
 interface ReviewsCreateProps 
@@ -71,7 +72,7 @@ class ReviewsCreate extends React.Component<ReviewsCreateProps, ReviewsCreateSta
             <>  
                 <div className="post-container">
                     <div className="post-image-container">
-                        <img className="post-image" src={this.props.image_url} alt="poster" />
+                        <img className="post-image" src={this.props.image_url !== undefined ? this.props.image_url : null} alt="poster" />
                     </div>
                     <div className="text-container">
                         <h1 className="post-header1">{this.props.title}</h1>
