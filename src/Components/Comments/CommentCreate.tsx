@@ -79,9 +79,9 @@ class CommentCreate extends React.Component<CommentCreateProps, CommentCreateSta
     }
 
 
-    commentCreate = (e: React.SyntheticEvent): void => {
-        e.preventDefault();
-        fetch(`http://localhost:4000/comment/create`, {
+    commentCreate = (): void => {
+    
+        fetch(`${APIURL}comment/create`, {
             method: 'POST',
             body: JSON.stringify({
                 content: this.state.content,
