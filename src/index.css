@@ -3,7 +3,6 @@
 	box-sizing: border-box;
 	scroll-behavior: smooth;
 }
-
 body 
 {
 	margin: 0;
@@ -12,56 +11,56 @@ body
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
-
 .AppContainer 
 {
 	padding: 0px;
 }
-
 .App 
 {
 	height: 100vh;
 	width: 100%;
 	background-color: rgb(30,30,30);
 }
-
-.navHover {
+.navHover 
+{
   z-index: 3;
   transition: 0.3s;
 }
-
-.navHover:hover {
+.navHover:hover 
+{
   z-index: 3;
   color: crimson;
 }
-
-.brandHover {
+.brandHover 
+{
   transition: 0.3s;
 }
 
 /* width */
-::-webkit-scrollbar {
+::-webkit-scrollbar 
+{
   width: 8px;
 }
-
 /* Track */
-::-webkit-scrollbar-track {
+::-webkit-scrollbar-track 
+{
   box-shadow: inset 0 0 5px rgb(75, 75, 75); 
   border-radius: 15px;
 }
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
+ /* Handle */
+::-webkit-scrollbar-thumb 
+{
   background: crimson; 
   border-radius: 15px;
 }
-
 /* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover 
+{
   background: crimson; 
 }
 
-.masterListBtn {
+.masterListBtn 
+{
   width: 475px;
   height: 175px;
   border: 2px solid black;
@@ -78,7 +77,8 @@ body
   list-style: none;
   z-index: 0;
 }
-.masterListBtn:before {
+.masterListBtn:before 
+{
       width: 100%;
 			height: 100%;
 			content: '';
@@ -91,20 +91,21 @@ body
 			transition: all .25s;
 			z-index: -1;
 }
-
-
-.masterListBtn:hover{
+.masterListBtn:hover
+{
   color: crimson;
 }
-.masterListBtn:hover:before{
+.masterListBtn:hover:before
+{
   top: 0;
   left: 0;
 }
-.masterListBtn:hover:after{
+.masterListBtn:hover:after
+{
   transform: rotateY(90deg);
 }
-
-.deleteBtn {
+.deleteBtn 
+{
   font-size: 25px;
   font-weight: 900;
   font-family: mulish, sans-serif;
@@ -112,11 +113,12 @@ body
   background-color: rgba(255,50,75,0.6);
   border: 0px solid black;
 }
-
-.deleteBtn:hover {
+.deleteBtn:hover 
+{
   filter: brightness(1.3); 
 }
-.editBtn {
+.editBtn 
+{
   font-size: 25px;
   font-weight: 900;
   font-family: mulish, sans-serif;
@@ -125,15 +127,15 @@ body
   background-color: rgba(255,50,75,0.6);
   border: 0px solid black;
 }
-
-.editBtn:hover {
+.editBtn:hover 
+{
   filter: brightness(1.3); 
 }
-
-.saveBtn:hover {
+.saveBtn:hover 
+{
   filter: brightness(1.3);
 }
-
-.xBtn:hover {
+.xBtn:hover 
+{
   filter: brightness(1.3);
 }
