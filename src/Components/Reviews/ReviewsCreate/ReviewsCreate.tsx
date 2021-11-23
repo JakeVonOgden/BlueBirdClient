@@ -72,7 +72,7 @@ class ReviewsCreate extends React.Component<ReviewsCreateProps, ReviewsCreateSta
             <>  
                 <div className="post-container">
                     <div className="post-image-container">
-                        <img className="post-image" src={this.props.image_url !== undefined ? this.props.image_url : null} alt="poster" />
+                        <img className="post-image" src={this.props.image_url !== null ? this.props.image_url : null} alt="poster" />
                     </div>
                     <div className="text-container">
                         <h1 className="post-header1">{this.props.title}</h1>
