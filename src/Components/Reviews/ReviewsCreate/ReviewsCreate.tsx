@@ -1,13 +1,13 @@
 import * as React from 'react';
 import APIURL from '../../../helpers/environment';
 import { Redirect } from 'react-router-dom'
-import { ThemeConsumer } from 'styled-components';
+
 
 
 interface ReviewsCreateProps 
 {
     title: string | null
-    image_url?: string | null
+    image_url?: string | null | undefined
     sessionToken: string | null
 }
 interface ReviewsCreateState 
