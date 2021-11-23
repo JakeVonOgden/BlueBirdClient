@@ -114,15 +114,12 @@ class CommentCreate extends React.Component<CommentCreateProps, CommentCreateSta
     render() { 
         return (  
             <>
-                <Modal isOpen={true}>
-                    <ModalBody>
-                        Create a comment
-                    </ModalBody>
-                    <ModalBody>
+                <Modal className="comment-modal" isOpen={true}>
+                    <ModalBody className="comment-modal-body">
                         <div className="text-container">
                             <form action="" className="mainWrap">
                                 <textarea placeholder="Leave your comment..." value={this.state.content} onChange={this.handleContentChange} className="modal-text-area"></textarea>
-                                <button type="submit" onClick={this.commentCreate} className="editBUTTON"> Post Comment </button>
+                                <button type="submit" onClick={this.commentCreate} className="editBUTTON"> Post </button>
                                 <button onClick={this.props.updateOff} className="deleteBUTTON"> Close </button>
                             </form>
                         </div>

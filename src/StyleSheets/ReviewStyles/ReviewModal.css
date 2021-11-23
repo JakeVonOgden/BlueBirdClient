@@ -1,8 +1,13 @@
-.modal-l
+.comment-modal
 {
-    height: 400px;
+    width: 400px;
+    margin-right: 35%;
+    margin-top: 6%;
 }
-
+.comment-modal-body
+{
+    height: 510px;
+}
 .modal-content 
 {
    color: rgba(23,27,31);
@@ -37,14 +42,14 @@
 .modal-text-area
 {
     width:100%;
-    box-shadow:4px 4px 0px rgba(0,0,0,.1);
+    box-shadow:4px 4px 0px rgba(0,0,0,0.5);
     color:white;
     font-size: 14px;
     height:400px;
     resize:none;
     background: rgba(35,35,35,1);
     border: 2px solid rgba(0,0,0,1);
-    margin-top: 10px;
+    padding: 15px;
 }
 
 .review-rating-header

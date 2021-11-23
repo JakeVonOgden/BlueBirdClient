@@ -95,15 +95,12 @@ class CommentsEdit extends React.Component<CommentsEditProps, CommentsEditState,
     render() { 
         return (
             <>
-                <Modal className="modal-l" isOpen={true}>
-                    <ModalBody>
-                        Edit Comment
-                    </ModalBody>
-                    <ModalBody>
+                <Modal className="comment-modal" isOpen={true}>
+                    <ModalBody className="comment-modal-body">
                         <div className="text-container">
                             <form action="" className="mainWrap">
                                 <textarea className="modal-text-area" placeholder="Edit your comment..." value={this.state.content} onChange={this.handleContentChange}></textarea>
-                                <button type="submit" className="editBUTTON" onClick={this.commentEdit}> Save Changes </button>
+                                <button type="submit" className="editBUTTON" onClick={this.commentEdit}> Save </button>
                                 <button onClick={this.props.updateCommentOff} className="deleteBUTTON"> Close </button>
                             </form>
                         </div>
