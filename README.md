@@ -1,4 +1,4 @@
-# RedHawk, a Web App for searching and reviewing anime.
+# RedHawk, a Web App for reviewing anime.
 
 ## Motivation
 
