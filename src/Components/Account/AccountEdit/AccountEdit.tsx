@@ -108,7 +108,7 @@ class AccountEdit extends React.Component<AccountEditProps, AccountEditState, Us
                         </FormGroup>
                         <br/>
                         <FormGroup className="modal-form">
-                            <Label htmlfor="password">EditPassword:</Label>
+                            <Label htmlfor="password">Edit Password:</Label>
                             <br/>
                             <Input name="password" value={this.state.editPassword} onChange={this.handlePasswordChange}/>
                         </FormGroup>
