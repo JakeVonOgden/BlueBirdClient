@@ -71,7 +71,7 @@ class CommentsEdit extends React.Component<CommentsEditProps, CommentsEditState,
 
     commentEdit = (event: React.SyntheticEvent): void => {
         event.preventDefault();
-        fetch(`http://localhost:4000/comment/edit/${this.props.commentToEdit.id}`, {
+        fetch(`${APIURL}comment/edit/${this.props.commentToEdit.id}`, {
             method: 'PUT',
             body: JSON.stringify({
                 content: this.state.content

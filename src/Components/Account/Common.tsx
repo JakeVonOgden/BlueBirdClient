@@ -18,7 +18,7 @@ export const FormContainer = styled.form`
 
 export const MutedLink = styled.div`
     font-size: 21px;
-    color: rgba(150,150,150,1);
+    color: rgba(100,100,100,1);
     font-family: nunito, sans-serif;
     font-weight: 500;
     text-decoration: none;
@@ -38,15 +38,17 @@ export const Input = styled.input`
     width: 100%;
     height: 42px;
     outline: none;
-    border: 1px solid rgba(150,150,150,0.7);
+    border: 1px solid rgba(0,0,0,1);
     padding: 0px 10px;
     border-bottom: 1.4px solid transparent;
     transition: all 200ms ease-in-out;
+    background: rgba(31,31,31,0.9);
     font-size: 25px;
     font-family: nunito, sans-serif;
+    color: rgba(200,200,200,1);
 
     &::placeholder {
-        color: rgba(150,150,150,1);
+        color: rgba(200,200,200,1);
     }
 
     &:not(:last-of-type) {
@@ -74,6 +76,7 @@ export const SubmitButton = styled.button`
     margin-top: 30px;
 
     &:hover {
-        filter: brightness(1.2);
+        background-color: black;
+        color: crimson;
     }
 `;

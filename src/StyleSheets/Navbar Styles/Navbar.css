@@ -3,7 +3,7 @@
     height: 3.75em;
     min-width: 20rem;
     justify-content: space-between;
-    background: rgb(10,10,10);
+    background: rgba(20,20,20,1);
     padding-left: 13%;
     padding-right: 13%;
 }
@@ -13,9 +13,7 @@
     font-family: nunito;
     font-size: 20px;
     font-weight: 900;
-    
     color: crimson;
-    text-shadow: 3px 4px 5px rgba(80,80,80,0.8);
     padding: 8px;
 }
 
@@ -38,19 +36,19 @@
 {
     background-color: rgba(55,55,55,1);
     color: rgba(200,200,200,0.8);
-    border: 1px solid rgba(220,20,60,0.3);
+    border: 2px solid rgba(218, 20, 59,0.65);
     font-size: 18px;
     padding: 15px;
     height: 40px;
     width: 50px;
-    transition: width 0.75s ease;
-    margin-left: 100px;
+    transition: width 0.55s ease;
+    margin-left: 25px;
     margin-top: 3px;
 }
 
 .search-btn
 {
-    background-color: rgb(10,10,10);
+    background-color: rgba(21,21,21,1);
     border: 0;
     cursor: pointer;
     font-size: 24px;
@@ -59,8 +57,8 @@
     left: 0;
     height: 40px;
     width: 50px;
-    transition: transform 0.8s ease;
-    margin-left: 100px;
+    transition: transform 0.6s ease;
+    margin-left: 25px;
     margin-top: 3px;
 }
 
@@ -82,7 +80,7 @@
 
 .fas 
 {
-    color: rgba(100,100,100,1);
+    color: rgba(225,225,225,1);
 }
 
 .green-items > a
@@ -90,7 +88,7 @@
     font-family: nunito, sans-serif;
     font-size: 18px;
     font-weight: 700;
-    color: #addfad;
+    color: white;
 }
 
 .login-logout
@@ -99,9 +97,8 @@
     font-size: 20px;
     font-weight: 900;
     color: crimson;
-    text-shadow: 3px 4px 5px rgba(80,80,80,0.8);
     padding: 8px;
-    margin-left: 81%;
+    margin-left: 85%;
 }
 
 li.white-items

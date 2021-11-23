@@ -53,4 +53,7 @@ const AccountContainer = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: -3.1%;
+    background: url('http://dslv9ilpbe7p1.cloudfront.net/Y-TEe8xXElhdokAksNpb0w_store_banner_image.png');
+    background-size: 110%;
 `;

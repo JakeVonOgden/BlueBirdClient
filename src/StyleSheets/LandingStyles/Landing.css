@@ -1,0 +1,138 @@
+.landing-container
+{
+  padding: 3%;
+  width: 100%;
+  height: 93vh;
+  position: absolute;
+  text-align:initial;
+  background-image: url('../../Assets/LuffyBg.png');
+  background-size: 92%;
+}
+
+.land-h1
+{
+  font-size: 115px;
+  text-shadow: 2px 3px 4px #000;
+  color: crimson;
+  font-weight: 500;
+  font-family: "Reggae One";
+  margin-top: 3%;
+  margin-left: 10.5%;
+}
+
+.land-h2
+{
+  font-size: 100px;
+  font-weight: 900;
+  color: rgb(225,225,225);
+  margin-left: 13%;
+  margin-top: 3%;
+  font-family: "nunito";
+}
+
+.land-para 
+{
+ font-size: 22px;
+ font-weight: 400;
+ font-family: nunito;
+ max-width: 475px;
+ color: rgb(225,225,225); 
+ margin-left: 12.8%;
+ margin-top: 1%;
+ text-align: justify;
+}
+.box-1
+{
+    height: 33.33%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.landing-btn
+{
+    color: crimson;
+	transition: all 0.3s;
+	position: relative;
+    line-height: 80px;
+	height: 80px;
+	text-align: center;
+	width: 500px;
+	cursor: pointer;
+    margin-top: 4%;
+    font-size: 55px;
+    font-family: nunito;
+    font-weight: 900;
+    margin-left: 12%;
+}
+
+.landing-btn span 
+{
+    transition: all 0.3s;
+}
+.landing-btn .landing-link
+{
+    transition: all 0.3s;
+}
+
+.landing-btn::before
+{
+    content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	opacity: 0;
+	transition: all 0.3s;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: rgba(255,255,255,0.5);
+	border-bottom-color: rgba(255,255,255,0.5);
+	transform: scale(0.5, 1.1);
+}
+
+.landing-btn:hover span {
+    letter-spacing: 2px;
+}
+.landing-btn:hover .landing-link
+{
+    letter-spacing: 2px;
+}
+
+.landing-btn:hover::before 
+{
+    opacity: 1;
+    transform: scale(1.1);
+    text-shadow: none;
+    box-shadow: none;
+}
+
+.landing-btn::after
+{
+    content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	transition: all 0.3s;
+	background-color: rgba(0,0,0,0.15);
+    box-shadow: 2px 3px 4px rgba(0,0,0,1);
+}
+
+.landing-btn:hover::after
+{
+    opacity: 0;	
+	transform: scale(0.5, 1.1);
+}
+
+.landing-link 
+{
+    text-decoration: none;
+    color: crimson;
+}

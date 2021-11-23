@@ -79,9 +79,8 @@ class ReviewsCreate extends React.Component<ReviewsCreateProps, ReviewsCreateSta
                         <br/>
                         <form action="" className="mainWrap">
                             <div className="review-header">
-                                <h3 className="rating">Rating</h3>
                                 <select id="rating" className="custom-select" value={this.state.rating} onChange={this.handleRatingChange}>
-                                    <option disabled>Rating</option>
+                                    <option selected>Rating</option>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>

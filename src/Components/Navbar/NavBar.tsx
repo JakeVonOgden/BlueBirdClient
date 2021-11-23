@@ -184,7 +184,7 @@ class NavBar extends React.Component <NavBarProps, NavBarState> {
             </Navbar>
                 <Switch>
                     <Route exact path='/'>
-                        <Landing sessionToken={sessionToken} /> 
+                        <Landing clearToken={clearToken} sessionToken={sessionToken} /> 
                     </Route>
                     <Route exact path='/anime'>
                         <Anime search={this.state.search} value={this.state.value} didSearch={this.state.didSearch}/>

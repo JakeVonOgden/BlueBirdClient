@@ -8,54 +8,21 @@ body
 {
 	margin: 0;
 	overflow-x: hidden;
-	background-color: rgb(23,27,31);
+	background-color: rgba(30,30,30,1);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
 
 .AppContainer 
 {
-	padding: 0;
+	padding: 0px;
 }
 
 .App 
 {
 	height: 100vh;
 	width: 100%;
-	background-color: rgb(23,27,31);
-}
-
-
-.text-box 
-{
-  position: absolute;
-  text-align: center;
-  width: 100%;
-}
-
-.landing-button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.landing-button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.landing-button:hover span {
-  padding-right: 25px;
-}
-
-.landing-button:hover span:after {
-  opacity: 1;
-  right: 0;
+	background-color: rgb(30,30,30);
 }
 
 .navHover {
@@ -71,8 +38,6 @@ body
 .brandHover {
   transition: 0.3s;
 }
-
-
 
 /* width */
 ::-webkit-scrollbar {

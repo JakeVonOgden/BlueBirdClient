@@ -49,6 +49,7 @@ class AccountTable extends React.Component<AccountTableProps> {
                         <div className="card__button">
                             <p onClick={() => {this.props.editUpdateAccount(account); this.props.updateOn()}}>Edit</p>
                         </div>
+
                     
                 </>
                 
@@ -58,12 +59,15 @@ class AccountTable extends React.Component<AccountTableProps> {
     
     render() { 
         return (
+            <>
+            
             <div className="card">
                 <div className="card__image">
                     <img src='https://media-exp1.licdn.com/dms/image/C4E03AQEO4PYpy7svPQ/profile-displayphoto-shrink_800_800/0/1634117865921?e=1642636800&v=beta&t=hen__z9-UzP5_UigvuCpJjKDk8uesguigmYGAquIPMo' alt="pic" />
                 </div>
                 {this.accountMapper()}
             </div>
+            </>
         );
     }
 }

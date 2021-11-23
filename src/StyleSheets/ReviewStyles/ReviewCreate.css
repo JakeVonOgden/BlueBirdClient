@@ -1,9 +1,10 @@
 .post-container
 {
-    margin: 8px 20px;
     display: flex;
-    padding: 8px 20px;
+    padding: 23px 20px;
     justify-content: flex-start;
+    background: url('../../Assets/post-bg.jpg');
+    background-size: contain;
 }
 
 .post-image-container
@@ -27,12 +28,12 @@
 
 .post-header1
 {
-    color: #addfad;
+    color: crimson;
     padding-top: 20px;
     margin-bottom: 0.35em;
     font-size: 3rem;
-    font-family: Reggae One;
-    font-weight: 600;
+    font-family: nunito;
+    font-weight: 900;
     line-height: 1.167;
     letter-spacing: 0em;
 }
@@ -51,45 +52,59 @@
 }
 .custom-select
 {
-    width:10%;
+    width: 20%;
+    height: 50px;
     border:0;
-    background:#fff;
+    background: rgba(20,20,20);
+    color: goldenrod;
     font-size:1.2em;
-   
-    box-shadow:4px 4px 0px rgba(0,0,0,.1);
-    color:#111;
+    font-family: nunito;
+    font-weight: 900;
+    box-shadow:2px 3px 4px rgba(0,0,0,1);
+    border-radius: 10px;
+    padding: 10px;
 }
-.rating
+
+.custom-select:hover
 {
-    color: white;
-    font-family: Reggae One;
-    font-weight: 400;
-    font-size: 25px;
-    padding-right: 38px;
+    cursor: pointer;
+    filter:brightness(1.2);
 }
+
 
 .mainArea
 {
     width:100%;
-    box-shadow:4px 4px 0px rgba(0,0,0,.1);
+    box-shadow:2px 3px 4px rgba(0,0,0,1);
     font-size:1.4em;
     margin-top:20px;
-    padding:20px;
-   
-    color:#111;
+    padding: 20px;
+    color: rgb(200,200,200);
     height:400px;
     resize:none;
+    background: rgba(35,35,35);
+    border: 2px solid black;
+    border-radius: 15px;
 }
 
 .reviewBtn
 {
     width:100%;
-    padding:20px;
-    text-align:center;
-    margin-top:20px;
-    font-size:2em;
-    background: #addfad;;
+    padding:25px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2em;
+    background: crimson;
     color: black;
-    font-family: Reggae One;
-    cursor:pointer;
+    font-family: nunito;
+    font-weight: 900;
+    cursor: pointer;
+    border: 2px solid rgb(35,35,35);
+    transition: 0.5s ease;
+    border-radius: 15px;
+}
+.reviewBtn:hover
+{
+    background-color: rgba(25,25,25);
+    color: crimson;
 }
