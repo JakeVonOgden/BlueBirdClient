@@ -84,9 +84,6 @@ class ReviewsEdit extends React.Component<ReviewsEditProps, ReviewsEditState> {
     render() { 
         return (
             <Modal className="modal-l" isOpen={true}>
-                 <ModalBody>
-                    Update Review
-                </ModalBody>
                 <ModalBody>
                         <div className="text-container">
                             <form action="" className="mainWrap">
@@ -103,8 +100,8 @@ class ReviewsEdit extends React.Component<ReviewsEditProps, ReviewsEditState> {
                                         </select>
                                      </div>
                                 <textarea placeholder="Leave your review..." className="modal-text-area" value={this.state.editContent} onChange={this.handleContentChange}></textarea>
-                                <button type="submit" onClick={this.reviewUpdate} className="review-updateBtn">Save </button>
-                                <button onClick={this.props.updateOff} className="review-updateBtn"> Close </button>
+                                <button type="submit" onClick={this.reviewUpdate} className="editBUTTON">Save </button>
+                                <button onClick={this.props.updateOff} className="deleteBUTTON"> Close </button>
                             </form>
                         </div>
                 </ModalBody>
