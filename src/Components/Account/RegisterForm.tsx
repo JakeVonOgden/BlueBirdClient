@@ -50,9 +50,27 @@ class RegisterForm extends React.Component<RegisterFormProps, RegisterFormState,
         this.handleEmailChange = this.handleEmailChange.bind(this)
         this.handlePasswordConfirmChange = this.handlePasswordConfirmChange.bind(this)
     }
-   
+    usernameRegex = /(^.*(?=.*[A-Za-z .])(?=.{3,})(?=.*[!@#$%^&*_0-9]).*$)/;
+    passwordRegex = /^[A-Za-z_0-9_!@#$%^&* .]{5,20}$/;
+
+    usernameAlert = () => {
+        alert('Username requires at least 4 characters and 1 number or special character');
+    }
+    passwordAlert = () => {
+        alert('Password requires at least 5 characters');
+    }
+
     handleSubmit = (event: React.SyntheticEvent): void => {
         event.preventDefault();
+        
+        if(this.usernameRegex.test(this.state.username) !== true) {
+            return this.usernameAlert();
+        }
+        
+        if (this.passwordRegex.test(this.state.password) !== true) {
+            return this.passwordAlert();
+        }
+        
         fetch(`${APIURL}user/register`, {
             method: 'POST',
             body: JSON.stringify({ username: this.state.username, password: this.state.password, email: this.state.email }),

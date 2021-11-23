@@ -52,6 +52,7 @@ class LoginForm extends React.Component<LoginFormProps, LoginFormState, UserJson
         this.handlePasswordChange = this.handlePasswordChange.bind(this)
     }
     
+    
     handleSubmit = (event: React.SyntheticEvent): void => {
         event.preventDefault();
         fetch(`${APIURL}user/login`, {
