@@ -1,4 +1,5 @@
 import * as React from 'react';
+import APIURL from '../../../helpers/environment';
 import '../../../StyleSheets/ReviewStyles/ReviewDisplay.css'
 import { 
     Container,
@@ -34,7 +35,7 @@ interface ReviewJSON
 class ReviewsDisplay extends React.Component<ReviewsDisplayProps> {
     
     deleteReview = (review: ReviewJSON) => {
-        fetch(`http://localhost:4000/review/delete/${review.id}`, {
+        fetch(`${APIURL}review/delete/${review.id}`, {
             method: "DELETE",
             headers: new Headers({
                 'Content-Type': 'application/json',

@@ -1,4 +1,5 @@
 import * as React from 'react';
+import APIURL from '../../../helpers/environment';
 import '../../../StyleSheets/ReviewStyles/ReviewModal.css';
 import 
 {
@@ -52,7 +53,7 @@ class ReviewsEdit extends React.Component<ReviewsEditProps, ReviewsEditState> {
     
     reviewUpdate = (event: React.SyntheticEvent): void => {
         event.preventDefault();
-        fetch(`http://localhost:4000/review/edit/${this.props.reviewToUpdate.id}`, {
+        fetch(`${APIURL}review/edit/${this.props.reviewToUpdate.id}`, {
             method: 'PUT',
             body: JSON.stringify({
                 content: this.state.editContent, 

@@ -6,6 +6,7 @@ import {
     SubmitButton, 
     BoldLink 
 } from './Common';
+import APIURL from '../../helpers/environment';
 import { Redirect } from 'react-router';
 import * as React from 'react';
 
@@ -53,7 +54,7 @@ class LoginForm extends React.Component<LoginFormProps, LoginFormState, UserJson
     
     handleSubmit = (event: React.SyntheticEvent): void => {
         event.preventDefault();
-        fetch("http://localhost:4000/user/login", {
+        fetch(`${APIURL}user/login`, {
             method: 'POST',
             body: JSON.stringify({ username: this.state.username, password: this.state.password }),
             headers: new Headers({

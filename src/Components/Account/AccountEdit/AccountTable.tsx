@@ -1,4 +1,5 @@
 import * as React from 'react';
+import APIURL from '../../../helpers/environment';
 import '../../../StyleSheets/AccountStyles/Profile.css';
 
 interface AccountTableProps 
@@ -22,7 +23,7 @@ interface UserJson
 class AccountTable extends React.Component<AccountTableProps> {
     
     deleteAccount = () => {
-        fetch(`http://localhost:4000/user/delete`, {
+        fetch(`${APIURL}user/delete`, {
             method: 'DELETE',
             headers: new Headers({
                 'Content-Type': 'application/json',

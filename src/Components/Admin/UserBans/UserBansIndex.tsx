@@ -1,4 +1,5 @@
 import * as React from 'react';
+import APIURL from '../../../helpers/environment';
 import '../../../StyleSheets/AdminStyles/AdminContainers.css'
 import UserBans from './UserBans';
 interface UserBansIndexProps
@@ -44,7 +45,7 @@ class UserBansIndex extends React.Component<UserBansIndexProps, UserBansIndexSta
     }
 
     fetchAccounts = () => {
-        fetch("http://localhost:4000/user/MasterList", {
+        fetch(`${APIURL}user/MasterList`, {
             method: 'GET',
             headers: new Headers ({
                 'Content-Type': 'application/json',

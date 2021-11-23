@@ -1,4 +1,5 @@
 import * as React from 'react';
+import APIURL from '../../../helpers/environment';
 import ReviewsRender from './ReviewsRender';
 import CommentsCreate from '../../Comments/CommentCreate';
 import CommentsEdit from '../../Comments/CommendEdit';
@@ -106,7 +107,7 @@ class ReviewGet extends React.Component<ReviewGetProps, ReviewGetState, ReviewJS
 
 
     fetchReviews = () => {
-        fetch(`http://localhost:4000/review/${this.props.title}`, {
+        fetch(`${APIURL}review/${this.props.title}`, {
             method: "GET",
             headers: new Headers ({
                 'Content-Type': 'application/json',

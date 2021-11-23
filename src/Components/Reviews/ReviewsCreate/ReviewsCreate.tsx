@@ -1,4 +1,5 @@
 import * as React from 'react';
+import APIURL from '../../../helpers/environment';
 import { Redirect } from 'react-router-dom'
 
 
@@ -33,7 +34,7 @@ class ReviewsCreate extends React.Component<ReviewsCreateProps, ReviewsCreateSta
 
     handleSubmit = (event: React.SyntheticEvent): void => {
         event.preventDefault();
-        fetch('http://localhost:4000/review/create', {
+        fetch(`${APIURL}review/create`, {
             method: 'POST',
             body: JSON.stringify({anime: this.props.title, rating: this.state.rating, content: this.state.content, image: this.props.image_url}),
             headers: new Headers({

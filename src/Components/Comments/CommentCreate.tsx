@@ -1,4 +1,5 @@
 import * as React from 'react';
+import APIURL from '../../helpers/environment';
 import 
 {
     Modal,
@@ -62,7 +63,7 @@ class CommentCreate extends React.Component<CommentCreateProps, CommentCreateSta
     }
 
     fetchComments = (id: number) => {
-        fetch(`http://localhost:4000/comment/${id}`, {
+        fetch(`${APIURL}comment/${id}`, {
             method: "GET",
             headers: new Headers({
                 'Content-Type': 'application/json',

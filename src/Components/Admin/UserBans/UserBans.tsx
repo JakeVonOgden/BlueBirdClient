@@ -1,4 +1,5 @@
 import * as React from 'react';
+import APIURL from '../../../helpers/environment';
 import '../../../StyleSheets/AdminStyles/AdminTable.css'
 import {Table} from 'reactstrap'
 interface UserBansProps 
@@ -35,7 +36,7 @@ class UserBans extends React.Component<UserBansProps, UserBansState, UserJson> {
     }
 
     deleteAccount = (account: UserJson) => {
-        fetch(`http://localhost:4000/user/delete/${account.id}`, {
+        fetch(`${APIURL}user/delete/${account.id}`, {
             method: 'DELETE',
             headers: new Headers({
                 'Content-Type': 'application/json',

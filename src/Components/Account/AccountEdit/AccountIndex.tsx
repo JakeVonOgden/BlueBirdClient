@@ -1,4 +1,5 @@
 import * as React from 'react';
+import APIURL from '../../../helpers/environment';
 import AccountEdit from './AccountEdit';
 import AccountTable from './AccountTable';
 
@@ -45,7 +46,7 @@ class AccountIndex extends React.Component<AccountIndexProps, AccountIndexState,
     }
 
     fetchAccount = () => {
-        fetch(`http://localhost:4000/user/mine`, {
+        fetch(`${APIURL}user/mine`, {
             method: 'GET',
             headers: new Headers ({
                 'Content-Type': 'application/json',

@@ -1,4 +1,5 @@
 import * as React from 'react';
+import APIURL from '../../../helpers/environment';
 import '../../../StyleSheets/AccountStyles/EditModal.css';
 import '../../../StyleSheets/ButtonStyles/Buttons.css';
 import 
@@ -52,7 +53,7 @@ class AccountEdit extends React.Component<AccountEditProps, AccountEditState, Us
 
     accountUpdate = (event: React.SyntheticEvent): void => {
         event.preventDefault()
-        fetch(`http://localhost:4000/user/edit`, {
+        fetch(`${APIURL}user/edit`, {
             method: 'PUT',
             body: JSON.stringify({
                 username: this.state.editUsername, 

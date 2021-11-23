@@ -1,4 +1,5 @@
 import * as React from 'react';
+import APIURL from '../../helpers/environment';
 import { Redirect } from 'react-router';
 import 
 { 
@@ -52,7 +53,7 @@ class RegisterForm extends React.Component<RegisterFormProps, RegisterFormState,
    
     handleSubmit = (event: React.SyntheticEvent): void => {
         event.preventDefault();
-        fetch("http://localhost:4000/user/register", {
+        fetch(`${APIURL}user/register`, {
             method: 'POST',
             body: JSON.stringify({ username: this.state.username, password: this.state.password, email: this.state.email }),
             headers: new Headers({

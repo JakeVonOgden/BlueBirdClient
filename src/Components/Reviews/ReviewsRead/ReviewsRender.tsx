@@ -1,4 +1,5 @@
 import * as React from 'react';
+import APIURL from '../../../helpers/environment';
 import '../../../StyleSheets/ReviewStyles/ReviewComments.css'
 
 
@@ -90,7 +91,7 @@ class ReviewsRender extends React.Component<ReviewsRenderProps, ReviewsRenderSta
     }
 
     fetchComments = () => {
-        fetch(`http://localhost:4000/comment/${this.state.reviewId}`, {
+        fetch(`${APIURL}comment/${this.state.reviewId}`, {
             method: "GET",
             headers: new Headers({
                 'Content-Type': 'application/json',
@@ -106,7 +107,7 @@ class ReviewsRender extends React.Component<ReviewsRenderProps, ReviewsRenderSta
     }
 
     deleteComment = (comment: CommentJSON) => {
-        fetch(`http://localhost:4000/comment/delete/${comment.id}`, {
+        fetch(`${APIURL}comment/delete/${comment.id}`, {
             method: "DELETE",
             headers: new Headers({
                 'Content-Type': 'application/json',

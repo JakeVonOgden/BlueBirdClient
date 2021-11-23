@@ -1,4 +1,5 @@
 import * as React from 'react';
+import APIURL from '../../../helpers/environment';
 import {Container} from 'reactstrap';
 import ReviewsDisplay from './ReviewsDisplay';
 import ReviewsEdit from './ReviewsEdit';
@@ -50,7 +51,7 @@ class PersonalReviews extends React.Component<PersonalReviewsProps, PersonalRevi
     }
 
     fetchReviews = () => {
-        fetch(`http://localhost:4000/review/mine`, {
+        fetch(`${APIURL}review/mine`, {
             method: "GET",
             headers: new Headers ({
                 'Content-Type': 'application/json',
