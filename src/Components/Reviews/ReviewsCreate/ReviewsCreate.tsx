@@ -6,7 +6,7 @@ import { Redirect } from 'react-router-dom'
 interface ReviewsCreateProps 
 {
     title: string | null
-    image_url: string | null
+    image_url?: string | null
     sessionToken: string | null
 }
 interface ReviewsCreateState 

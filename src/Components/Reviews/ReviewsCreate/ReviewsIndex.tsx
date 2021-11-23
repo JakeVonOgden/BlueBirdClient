@@ -10,7 +10,7 @@ interface ReviewsIndexProps
 interface ReviewsIndexState 
 {
     title: string | null,
-    image_url: string | null,
+    image_url?: string | null,
     content: string,
     rating: number,
     userId: number
